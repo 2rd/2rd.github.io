@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Space Worms</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+    <div id="chooseContainer">
+        <label name="boardNumber">Enter board number</label>
+        <input type="text" id="boardNumber" />
+        <button onclick="loadBtn()">Get board</button>
+    </div>
+    <div id="boardContainer">
+        <table id="boardData">
+            <tbody>
+                <tr>
+                    <th id="boardHeader"></th>
+                </tr>
+                <tr>
+                    <td>Name:</td>
+                    <td id="name"></td>
+                </tr>
+                <tr>
+                    <td>Size:</td>
+                    <td id="size"></td>
+                </tr>
+                <tr>
+                    <td>Start - Goal:</td>
+                    <td id="start"></td>
+                </tr>
+                <tr>
+                    <td>Wormholes:</td>
+                    <td id="wormholes"></td>
+                </tr>
+            </tbody>
+        </table>
+        <div id="btns">
+            <button id="shortest" onclick="minPathBtn()">Find shortest path</button>
+        </div>
+    </div>
+</body>
+</html>
